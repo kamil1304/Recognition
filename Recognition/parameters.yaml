@@ -1,0 +1,43 @@
+# Information about load and saving clouds
+file_to_load: 'list.txt' 
+listener_save_name: 'test'
+listener_file_number: 0 # saved files's first number
+publish_topic_name: 'visualization_markers'
+subscribed_topic: '/camera/depth_registered/points'
+viewer_name: 'Viewer'
+
+
+#parameters for clastering
+claster_dist_between_points: 0.02
+claster_min_points: 100
+claster_max_points: 25000
+
+# information about  creating descriptor
+descriptors_radius_normals: 0.14
+descriptors_radius_suport_cylinder: 0.14
+
+# filtering parameters
+# value  between <min,max> will NOT be removed
+filter_voxel_x: 0.006
+filter_voxel_y: 0.006
+filter_voxel_z: 0.006
+filter_floor_min: 0.0 
+filter_floor_max: 1.15
+filter_wall_min: -0.15
+filter_wall_max: 1.0
+filter_out_mean: 10
+filter_out_thres: 1.0
+
+#recogniton parameters
+recognition_points_to_check: 180 #amount of points which should be checked
+recognition_threshold_similarity: 0.993 # should be <-1,1>
+recognition_thres_simil_point: 35 # amount of points which should be found
+
+publish_cube_x: 0
+publish_cube_y: 0
+publish_cube_z: 0
+publish_cube_width: 0.40
+publish_cube_depth: 0.40
+publish_cube_height: 0.40
+publish_transparency: 0.3
+
